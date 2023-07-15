@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Página Web</title>
+   
+</head>
+<body>
+    <style>
+        /* Estilos CSS */
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div id="background"></div>
+
+    <script src="script.js"></script>
+
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#acerca">Acerca de</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio">
+        <h2>¡Hola!</h2>
+        <p>Bienvenido a mi página web. Aquí encontrarás información sobre nuestros servicios y cómo contactarnos.</p>
+    </section>
+
+    <section id="acerca">
+        <h2>Acerca de</h2>
+        <p>Somos una empresa dedicada a brindar soluciones web. Nuestro equipo de expertos está comprometido en ofrecerte la mejor calidad y servicio.</p>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Diseño web</li>
+            <li>Desarrollo de aplicaciones</li>
+            <li>Optimización de motores de búsqueda (SEO)</li>
+        </ul>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes contactarnos a través del siguiente formulario:</p>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>Derechos de autor &copy; 2023 | Mi Página Web</p>
+    </footer>
+</body>
+</html>
