@@ -1,30 +1,35 @@
-/* Estilos CSS minimalistas */
+/* Estilos generales */
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     color: #333;
 }
 
 header {
     background-color: #333;
-    color: #fff;
+    color: #F9D9C5;
     padding: 20px;
     text-align: center;
+    background-image: url("img/boca.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: #FFFDD0;
     overflow: hidden;
 }
 
@@ -38,74 +43,85 @@ nav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 nav li a:hover {
-    background-color: #ddd;
+    background-color: #FFFDD0;
 }
 
 section {
-    padding: 20px;
+    padding: 50px;
+    text-align: center;
+    background-color: #F9D9C5;
+    
 }
 
 h2 {
     color: #333;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.producto {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     margin-bottom: 20px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
 }
 
-.producto img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+ul {
+    margin-top: 0;
+    list-style: none;
 }
 
-.producto h3 {
-    margin: 0;
-    font-size: 16px;
-}
-
-.producto p {
-    margin: 0;
-    color: #666;
-}
-
-.producto button {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#carrito {
-    background-color: #f9f9f9;
-    padding: 20px;
-}
-
-#carrito ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-#carrito li {
+ul li {
     margin-bottom: 10px;
 }
 
 footer {
     background-color: #333;
-    color: #fff;
+    color: #FFFDD0;
     padding: 20px;
     text-align: center;
     font-size: 12px;
+}
+
+/* Estilos específicos */
+#biografia *{
+
+    background-color: #F9D9C5;
+}
+
+#biografia img {
+
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+}
+
+#biografia p {
+    margin-bottom: 20px;
+    
+   
+    
+}
+
+#proyectos .proyecto {
+    margin-bottom: 30px;
+    background-color: #FFFDD0;
+}
+
+#proyectos img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+#habilidades ul {
+    column-count: 3;
+}
+
+#contacto ul {
+    margin-top: 10px;
+}
+
+#contacto ul li {
+    margin-bottom: 5px;
 }
